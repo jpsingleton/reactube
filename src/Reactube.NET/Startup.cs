@@ -55,10 +55,10 @@ namespace Reactube.NET
                 // If you want to use server-side rendering of React components,
                 // add all the necessary JavaScript files here. This includes
                 // your components as well as all of their dependencies.
-                // See http://reactjs.net/ for more information. Example:
-                //config
-                //  .AddScript("~/Scripts/First.jsx")
-                //  .AddScript("~/Scripts/Second.jsx");
+                // See http://reactjs.net/ for more information.
+                config
+                    .AddScriptWithoutTransform("~/js/moment.min.js")
+                    .AddScript("~/js/reactube.jsx");
 
                 // If you use an external build too (for example, Babel, Webpack,
                 // Browserify or Gulp), you can improve performance by disabling

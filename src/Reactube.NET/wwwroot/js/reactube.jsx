@@ -13,23 +13,7 @@
     },
     getInitialState: function () {
         return {
-            statusData: [
-                { id: "bakerloo", name: "Bakerloo", modeName: "tube" },
-                { id: "central", name: "Central", modeName: "tube" },
-                { id: "circle", name: "Circle", modeName: "tube" },
-                { id: "district", name: "District", modeName: "tube" },
-                { id: "hammersmith-city", name: "Hammersmith & City", modeName: "tube" },
-                { id: "jubilee", name: "Jubilee", modeName: "tube" },
-                { id: "metropolitan", name: "Metropolitan", modeName: "tube" },
-                { id: "northern", name: "Northern", modeName: "tube" },
-                { id: "piccadilly", name: "Piccadilly", modeName: "tube" },
-                { id: "victoria", name: "Victoria", modeName: "tube" },
-                { id: "waterloo-city", name: "Waterloo & City", modeName: "tube" },
-                { id: "london-overground", name: "London Overground", modeName: "overground" },
-                { id: "tfl-rail", name: "TfL Rail", modeName: "tflrail" },
-                { id: "dlr", name: "DLR", modeName: "dlr" },
-                { id: "tram", name: "Tram", modeName: "tram" }
-            ],
+            statusData: this.props.initialData,
             statusTimestamp: moment()
         };
     },
@@ -122,7 +106,3 @@ var StatusTableRow = React.createClass({
     }
 });
 
-ReactDOM.render(
-  <TubeStatus />,
-  document.getElementById('content')
-);
