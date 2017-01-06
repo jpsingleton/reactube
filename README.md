@@ -12,4 +12,4 @@ Sorry for the bright colours, but those are the official ones. :rainbow:
 
 Tutorial:
  - [Part 1 (client-side)](https://unop.uk/building-a-web-app-in-react-and-asp-net-core-part-1/)
- - Part 2 (in progress)
+ - [Part 2 (server-side)](https://unop.uk/building-a-web-app-in-react-and-asp-net-core-part-2/)
