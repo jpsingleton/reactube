@@ -8,7 +8,7 @@ var TubeStatus = React.createClass({
 
     loadLineStatusInfo: function loadLineStatusInfo() {
         var xhr = new XMLHttpRequest();
-        xhr.open('get', 'https://api.tfl.gov.uk/line/mode/tube,overground,dlr,tflrail,tram/status', true);
+        xhr.open('get', 'https://api.tfl.gov.uk/line/mode/tube,overground,dlr,elizabeth-line,tram/status', true);
         xhr.onload = function () {
             var data = JSON.parse(xhr.responseText);
             this.setState({
@@ -93,7 +93,7 @@ var StatusTableRowList = React.createClass({
             var order = 9;
             if (line.modeName === 'tube') order = 1;
             if (line.modeName === 'overground') order = 2;
-            if (line.modeName === 'tflrail') order = 3;
+            if (line.modeName === 'elizabeth-line') order = 3;
             if (line.modeName === 'dlr') order = 4;
             if (line.modeName === 'tram') order = 5;
             return React.createElement(StatusTableRow, { lineStatusData: line, key: line.id, order: order });
